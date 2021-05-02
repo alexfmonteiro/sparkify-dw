@@ -9,7 +9,7 @@ This project was build reusing the code from my other Sparkify Projects:
  - [Sparkify Data Lake](https://github.com/alexfmonteiro/sparkify-datalake)
  - [Sparkify Airflow](https://github.com/alexfmonteiro/sparkify-airflow)
  
-The Jupyter notebook [setup_cluster.ipynb]() was taken mostly from Lesson 3 - Exercise 2 of Udacity Data Engineering Nanodegree.
+The Jupyter notebook [setup_cluster.ipynb](https://github.com/alexfmonteiro/sparkify-dw/blob/main/setup_cluster.ipynb) was taken mostly from Lesson 3 - Exercise 2 of Udacity Data Engineering Nanodegree.
  
 
 ## Datasets
@@ -48,7 +48,7 @@ And below is an example of what the data in a log file, `2018-11-12-events.json`
 
 ## Database
 
-![Entity-Relatioship Diagram](https://github.com/alexfmonteiro/sparkify-redshift/blob/main/images/sparkifydb_erd.png)
+![Entity-Relatioship Diagram](https://github.com/alexfmonteiro/sparkify-dw/blob/main/images/sparkifydb_erd.png)
 
 The Redshift tables were designed to optimize queries on song play analysis. 
 
@@ -80,14 +80,14 @@ Also, it was created a  star schema including the following tables:
 
 ### Prerequisites
 
-The solution was built using Python 3.6.3. For the complete package list used to build and run this application, please refer to the file [requirements-env.txt](https://github.com/alexfmonteiro/sparkify-redshift/blob/main/requirements-env.txt) 
+The solution was built using Python 3.6.3. For the complete package list used to build and run this application, please refer to the file [requirements-env.txt](https://github.com/alexfmonteiro/sparkify-dw/blob/main/requirements.txt) 
 
 
 ### How to run
 
 1. Fill the file `dwh.cfg` with your AWS credentials (access key and secret). Also, feel free to change the DWH properties that will be used to set up the cluster in the next step.
 
-2. Set up the Redshift cluster by following the steps 0-4 in the the notebook [setup_cluster.ipynb](https://github.com/alexfmonteiro/sparkify-redshift/blob/main/setup_cluster.ipynb).
+2. Set up the Redshift cluster by following the steps 0-4 in the the notebook [setup_cluster.ipynb](https://github.com/alexfmonteiro/sparkify-dw/blob/main/setup_cluster.ipynb).
 
 3. Then, run the application via CLI:
 
@@ -96,9 +96,9 @@ python create_tables.py
 python etl.py
 ```
 
-4. Run analytic queries in the notebook [analytics.ipynb](https://github.com/alexfmonteiro/sparkify-redshift/blob/main/analytics.ipynb).
+4. Run analytic queries in the notebook [analytics.ipynb](https://github.com/alexfmonteiro/sparkify-dw/blob/main/analytics.ipynb).
 
-5. Delete the Redshift cluster by following the step 5 in the notebook [setup_cluster.ipynb](https://github.com/alexfmonteiro/sparkify-redshift/blob/main/setup_cluster.ipynb).
+5. Delete the Redshift cluster by following the step 5 in the notebook [setup_cluster.ipynb](https://github.com/alexfmonteiro/sparkify-dw/blob/main/setup_cluster.ipynb).
 
 ## Analytics queries
 
