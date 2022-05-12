@@ -4,7 +4,7 @@ This project creates a ETL pipeline written in Python to process two different d
 
 Firtly, the ETL pulls data from an S3 bucket and loads it to staging tables on Redshift, then, it executes SQL statements that create the analytics tables from these staging tables.
 
-This project was build reusing the code from my other Sparkify Projects:
+This project was built reusing the code from my other Sparkify Projects:
  - [Sparkify Postgres](https://github.com/alexfmonteiro/sparkify-postgres)
  - [Sparkify Data Lake](https://github.com/alexfmonteiro/sparkify-datalake)
  - [Sparkify Airflow](https://github.com/alexfmonteiro/sparkify-airflow)
